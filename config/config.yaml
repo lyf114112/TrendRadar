@@ -28,14 +28,14 @@ report:
   mode: "daily" # 可选: "daily"|"incremental"|"current"
   rank_threshold: 5 # 排名高亮阈值
   sort_by_position_first: false # 排序优先级：true=先按配置位置排序，false=先按热点条数排序
-  max_news_per_keyword: 0 # 每个关键词最大显示数量，0=不限制
+  max_news_per_keyword: 5 # 每个关键词最大显示数量，0=不限制
 
 notification:
   enable_notification: true # 是否启用通知功能，如果 false，则不发送手机通知
-  message_batch_size: 4000 # 消息分批大小（字节）(这个配置别动)
+  message_batch_size: 3000 # 消息分批大小（字节）(这个配置别动)
   dingtalk_batch_size: 20000 # 钉钉消息分批大小（字节）(这个配置也别动)
   feishu_batch_size: 29000 # 飞书消息分批大小（字节）
-  batch_send_interval: 3 # 批次发送间隔（秒）
+  batch_send_interval: 5 # 批次发送间隔（秒）
   feishu_message_separator: "━━━━━━━━━━━━━━━━━━━" # feishu 消息分割线
 
   # 🕐 推送时间窗口控制（可选功能）
