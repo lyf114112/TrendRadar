@@ -4,7 +4,7 @@ app:
 
 crawler:
   request_interval: 1000
-  enable_crawler: true
+  enable_crawler: false
   use_proxy: false
   default_proxy: "http://127.0.0.1:10086"
 
